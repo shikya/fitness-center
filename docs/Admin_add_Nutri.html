@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New Trainer Registration Form - Fitness Center</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/cufon-yui.js"></script>
+    <script src="js/Asap_400.font.js"></script>
+    <script src="js/Coolvetica_400.font.js"></script>
+	<script src="js/Kozuka_M_500.font.js"></script>
+    <script src="js/cufon-replace.js"></script>
+    <script src="js/FF-cash.js"></script>
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script type="text/javascript" src="js/html5.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+    
+    
+    
+    
+<style>
+label,a, body 
+{
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px; 
+}
+.err
+{
+	font-family : Verdana, Helvetica, sans-serif;
+	font-size : 12px;
+	color: red;
+}
+</style>	
+<!-- a helper script for vaidating the form-->
+<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>	
+<style type="text/css">
+
+#form_table{
+	
+	background:#FFF;
+	width:450px;
+	margin: 1px;
+	font-family: arial;
+	color:#000000;
+	}
+#form_table th {
+	text-align: right;
+	color: #000;
+	font-size: 12px;
+	}
+#form_table td {
+	position: relative;
+	width: 40%;
+	}
+#form_table caption {
+	background:url(images/caption.png) center left;
+	height: 58px;
+	 line-height: 58px;
+	 width: 450px;
+	 font-size: 21px;
+	 font-weight: bolder;
+	 }
+#form_table input, #form_table textarea {
+	width: 300px;
+	background-color: #fdfdfd;
+	display: inline;
+	color: #000;
+	border:1px solid #01a5ca;
+	margin:1px 3px;
+	font-family: arial;
+	height: 10px;
+	font-size: 12px;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+}
+#form_table input[type="submit"], #form_table input[type="reset"] {
+	width: 120px;
+	padding-bottom:22px;
+	table-layout:auto;
+	}
+#form_table input:focus, #form_table textarea:focus{
+	background:#F0F0F0;
+	}
+	
+#h3
+{
+	text-decoration:blink;
+	color: #F00;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#form_table input + span, #form_table textarea + span {
+	display: none;
+	background:url(images/message.png) no-repeat center left;
+	line-height: 32px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+	padding:0px 20px;
+	position: absolute;
+	width: 180px;
+	z-index:99;
+	}
+ 
+</style>
+
+</head>
+<body>
+<div class="main">
+	<div class="bg-img"></div>
+<!--==============================header=================================-->
+    <header>
+        <h1><a href="index.html">Fitness <strong>Club.</strong></a></h1>
+        <nav>
+        	<div class="social-icons">
+            	<a href="#" class="con-2"></a>
+            	<a href="#" class="con-1"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">About</a></li>
+                <li><a href="trainers.html">Trainers</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>   
+<!--==============================content================================-->
+    <section id="content">
+        <div class="container_12">
+          <div class="grid_12">
+          	<div class="box-shadow">
+            	<div class="wrap block-2">
+            	  <div class="col-4">
+           	    <h2><span class="color-1">Add New</span> Nutrition</h2>
+                        <form id="form" method="post" >
+                            <fieldset>
+                              <table border="0" id="form_table">
+                                <tr>
+                                  <th width="25%"> Name &#8250;</th>
+                                  <td><input type="text" name="ename" value='' id="ename">
+                                    <br>
+                                    <br></td>
+                                <tr>
+                                  <th width="25%"> Quantity &#8250;</th>
+                                  <td><input type="text" name="ename" value='' id="ename">
+                                    <br>
+                                    <br></td>
+                                </tr>
+   <tr>
+                                  <th width="25%"> Price &#8250;</th>
+                                  <td><input type="text" name="ename" value='' id="ename">
+                                    <br>
+                                    <br></td>
+                                </tr>
+  <tr>
+    
+  <tr>
+    <th valign="top">Description &#8250;</th>
+    <td><textarea name="desc" cols="50" id="desc" style="height:100px"></textarea>
+      <br>
+      <br></td>
+  </tr>
+  <tr> <br>
+    <br>
+  </tr>
+  <tr><br>
+    <br>
+    
+      <th> </th>
+      <td><br>
+        <br>
+        <input type="submit" name="submit" value="Add">
+        <input type="reset" name="reset"></td>
+    </h1>
+  </tr>
+                              </table>
+                          </fieldset>  
+                          </form> 
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+    </section> 
+<!--==============================footer=================================-->
+    <footer>
+        <p>© 2012 Fitness Club</p>
+    </footer>
+</div>    
+<script>
+	Cufon.now();
+</script>
+</body>
+</html>
